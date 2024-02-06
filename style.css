@@ -58,30 +58,27 @@ body {
   background-color: var(--neutral1);
 }
 
-nav > img {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  left: 30px;
-  top: 0;
-}
-
 ul {
   list-style: none;
   display: flex;
   gap: 2rem;
   font-weight: 900;
-  position: absolute;
-  right: 60px;
-  top: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
 }
 
 nav {
-  color: whitesmoke;
+  color: orangered;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100px;
+  position: fixed;
+  top: 0;
+  justify-content: end;
+  min-height: 40px;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.005);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
 }
 
 .hero {
@@ -156,6 +153,7 @@ p.hero-text {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  min-height: 80vh;
 }
 .project-header {
   font-size: 3rem;
