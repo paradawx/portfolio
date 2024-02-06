@@ -58,6 +58,32 @@ body {
   background-color: var(--neutral1);
 }
 
+nav > img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 30px;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 900;
+  position: absolute;
+  right: 60px;
+  top: 20px;
+}
+
+nav {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100px;
+}
+
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url(Images/sebastian-unrau-sp-p7uuT0tw-unsplash.jpg);
@@ -102,7 +128,6 @@ p.hero-text {
 }
 
 .wrapper {
-  max-width: 60%;
   margin-inline: 2rem;
   display: flex;
   flex-direction: column;
@@ -118,14 +143,34 @@ p.hero-text {
   --gap: 4rem;
 }
 
+.project-wrapper {
+  background-image: linear-gradient(
+    -20deg,
+    var(--neutral1),
+    rgb(255 255 240),
+    white
+  );
+  margin-inline: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .project-header {
   font-size: 3rem;
   margin-top: var(--gap);
   color: var(--neutral1);
   padding: 1rem 2rem;
-  background-image: linear-gradient(to top, var(--primary1), var(--primary2));
-  border-radius: 2rem 0.5rem 2rem 0.5rem;
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary1),
+    var(--primary2)
+  );
+  border-radius: 1rem;
   font-weight: 700;
+  max-width: 60%;
+  border: var(--primary1) 3px solid;
 }
 .projects {
   display: flex;
@@ -136,6 +181,7 @@ p.hero-text {
   margin-top: var(--gap);
   margin-bottom: var(--gap);
   max-width: 100%;
+  margin-inline: 2rem;
 }
 
 .card {
@@ -146,10 +192,17 @@ p.hero-text {
   justify-content: center;
   background-color: white;
   overflow: hidden;
-  box-shadow: 0px 0px 10px;
+  box-shadow: 3px 3px 10px;
   flex-basis: 400px;
   flex-wrap: wrap;
 }
+
+.card:hover {
+  cursor: pointer;
+  transition: 0.5s ease;
+  scale: 1.1;
+}
+
 .portfolio2 > a > img {
   object-fit: cover;
   min-height: 400px;
@@ -157,7 +210,7 @@ p.hero-text {
 
 .skills {
   background-color: var(--primary2);
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
     url(Images/eugene-chystiakov-9UOF4oliKUY-unsplash.jpg);
@@ -191,6 +244,7 @@ p.hero-text {
   justify-content: center;
   align-items: center;
   margin-inline: var(--gap);
+  box-shadow: black 5px 5px 20px;
 }
 
 .ratings {
@@ -213,6 +267,7 @@ p.hero-text {
   justify-content: space-between;
   border-radius: 100vw;
   align-items: center;
+  box-shadow: black 3px 3px 5px;
 }
 
 .bar > span {
@@ -223,7 +278,7 @@ p.hero-text {
 .html {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 50%;
   background-color: #04aa6d;
   padding: 0.5rem;
   border-radius: 100vw;
