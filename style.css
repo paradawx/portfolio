@@ -69,7 +69,7 @@ ul {
 }
 
 nav {
-  color: orangered;
+  color: rgb(140, 140, 140);
   display: flex;
   position: fixed;
   top: 0;
