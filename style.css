@@ -156,8 +156,9 @@ p.hero-text {
   min-height: 80vh;
 }
 .project-header {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: var(--gap);
+  margin-bottom: var(--gap);
   color: var(--neutral1);
   padding: 1rem 2rem;
   background-image: linear-gradient(
@@ -222,15 +223,22 @@ p.hero-text {
   text-align: center;
 }
 
+/* .skills-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: var(--gap);
+} */
+
 .skills-header {
   color: var(--primary1);
-  font-size: 3rem;
+  font-size: 2.75rem;
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .frosted {
-  aspect-ratio: 2 / 1;
   border-radius: 1rem;
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.1);
@@ -241,8 +249,10 @@ p.hero-text {
   font-weight: 900;
   justify-content: center;
   align-items: center;
-  margin-inline: var(--gap);
   box-shadow: black 5px 5px 20px;
+  margin-inline: 2rem;
+  padding: 2rem;
+  max-width: 100%;
 }
 
 .ratings {
@@ -252,7 +262,6 @@ p.hero-text {
   justify-content: center;
   background-color: white;
   width: 80%;
-  margin: 2rem;
   border-radius: 0.5rem;
   gap: 1rem;
   padding: 2rem;
