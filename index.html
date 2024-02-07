@@ -10,22 +10,23 @@
     <header>
       <div class="hero">
         <nav>
-          <ul>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Contact</li>
-          </ul>
+          <a class="nav-link" href="#Projects">Projects</a>
+          <a class="nav-link" href="#Skills">Skills</a>
+          <a class="nav-link" href="#Contact">Contact</a>
         </nav>
         <h1 class="hero-text">Oh Hi There</h1>
         <p class="hero-text">
           I'm Dawson, I like to make cool stuff with code.
         </p>
-        <button class="project-btn">Check Out My Work</button>
+        <a href="#Projects"
+          ><button class="project-btn">Check Out My Work</button></a
+        >
       </div>
     </header>
     <main>
+      <button id="scrollBtn" onclick="topFunction()">^</button>
       <div class="wrapper">
-        <div class="project-wrapper">
+        <div class="project-wrapper" id="Projects">
           <h2 class="project-header">Things I've Done</h2>
           <div class="projects">
             <div class="card">
@@ -40,11 +41,12 @@
             </div>
           </div>
         </div>
-        <div class="skills">
+        <div class="skills" id="Skills">
           <div class="skills-container">
             <div class="frosted">
               <div class="ratings">
-                <h2 class="skills-header">Current Progress</h2>
+                <h2 class="skills-header">Skills</h2>
+                <p>0 = Clueless / 100 = Proficient</p>
                 <div class="bar">
                   <div class="html">HTML</div>
                   <span>50/100</span>
@@ -65,6 +67,8 @@
             </div>
           </div>
         </div>
+        <div class="contact"></div>
+        <footer></footer>
         <!-- <div class="call-to-action">
           <h2>Subscribe to my email list</h2>
           <input
@@ -76,5 +80,6 @@
         </div> -->
       </div>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
